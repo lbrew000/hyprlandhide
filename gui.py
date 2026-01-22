@@ -194,13 +194,13 @@ class HiddenWindowItem(QWidget):
         if(self.was_floating == client_data['floating']):
             pass
         else:
-            self.run_cmd("hyprctl dispatch togglefloating")
+            #self.run_cmd("hyprctl dispatch togglefloating")
             # while(self.x !=client_data['at'][0] and self.y != client_data['at'][0]):
             print(f"Window disired pos: {self.x}:{self.y} vs {client_data['at'][0]}:{client_data['at'][1]}")
-            self.run_cmd(f"hyprctl dispatch movetoworkspacesilent {self.workspace}")
-            success = self.cycle_until_focused(self.address)
-            if(success):
-                self.run_cmd(f"hyprctl dispatch moveactive {self.x} {self.y}")
+            self.run_cmd(f"hyprctl dispatch movetoworkspace {self.workspace}")
+            #success = self.cycle_until_focused(self.address)
+            #if(success):
+            #    self.run_cmd(f"hyprctl dispatch moveactive {self.x} {self.y}")
                 # client_data = get_client_by_address(self.address)
         json_path = os.path.join(HIDE_DIR, f"{self.address}.json")
         try:
