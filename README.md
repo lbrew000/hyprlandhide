@@ -21,23 +21,6 @@
 ---
 
 ### ⚙️ Setup
-## 📦 AUR Installation
-
-If you're on an Arch-based system, you can install **HyprHide** directly from the AUR:
-
-```bash
-yay -S hyprhide
-```
-
-Then, launch the GUI with:
-
-```bash
-hyprhide-gui
-```
-
-> ✅ This installs all dependencies and sets up `hyprhide-gui` as a runnable command.
-
----
 
 .
 
@@ -46,7 +29,7 @@ hyprhide-gui
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/KingVentrix007/hyprlandhide
+   git clone https://github.com/lbrew000/hyprlandhide
    ```
 
 2. Navigate to the build directory:
